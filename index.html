@@ -24,6 +24,10 @@
             }
             table.tb3, th.tb3, td.tb3 {
                 border-radius: 10px;
+                border-collapse: separate;
+            }
+            table {
+                border-collapse: collapse;
             }
             
         </style>
@@ -68,7 +72,7 @@
 
         <div>
 
-            <h1>Tabela</h1>
+            <h1>Tabelas</h1>
             <p>TABELA 1</p>
             <table class="tb1">
                 <tr>
@@ -114,37 +118,143 @@
                 </tr>
             </table>
 
-            <p>TABELA 4</p>
-            <table class="tb4">
+            <h1> Estilos de Borda</h1>
+            <p>
+            dotted<br>
+            dashed<br>
+            solid<br>
+            double<br>
+            groove<br>
+            ridge<br>
+            inset<br>
+            outset<br>
+            none<br>
+            hidden</p>
+        </div>
+
+        <div>
+
+            <h1>Estilos de Tabela</h1>
+
+            <p>Tabela Horizontal</p>
+            <table>
                 <tr>
-                    <th class="tb4">A</th><th class="tb4">1</th><th class="tb4">A/1</th>
-                </tr><tr>
-                    <td class="tb4">B</td><td class="tb4">2</td><td class="tb4">B/2</td>
-                </tr><tr>
-                    <td class="tb4">C</td><td class="tb4">3</td><td class="tb4">C/3</td>
-                </tr><tr>
-                    <td class="tb4">D</td><td class="tb4">4</td><td class="tb4">D/4</td>
-                </tr><tr>
-                    <td class="tb4">E</td><td class="tb4">5</td><td class="tb4">E/5</td>
+                    <th>A</th><th>1</th><th>A/1</th>
+                </tr>
+                <tr>
+                    <td>B</td><td>2</td><td>B/2</td>
+                </tr>
+                <tr>
+                    <td>C</td><td>3</td><td>C/3</td>
+                </tr>
+                <tr>
+                    <td>D</td><td>4</td><td>D/4</td>
                 </tr>
             </table>
 
-            <p>TABELA 5</p>
-            <table class="tb5">
+            <P>Tabela vertical</P>
+            <table>
                 <tr>
-                    <th class="tb5">A</th><th class="tb5">1</th><th class="tb5">A/1</th>
-                </tr><tr>
-                    <td class="tb5">B</td><td class="tb5">2</td><td class="tb5">B/2</td>
-                </tr><tr>
-                    <td class="tb5">C</td><td class="tb5">3</td><td class="tb5">C/3</td>
-                </tr><tr>
-                    <td class="tb5">D</td><td class="tb5">4</td><td class="tb5">D/4</td>
-                </tr><tr>
-                    <td class="tb5">E</td><td class="tb5">5</td><td class="tb5">E/5</td>
+                    <th>A</th><td>B</td><td>C</td><td>D</td>
+                </tr>
+                <tr>
+                    <th>1</th><td>2</td><td>3</td><td>4</td>
+                </tr>
+                <tr>
+                    <th>A/1</th><td>B/2</td><td>C/3</td><td>D/4</td>
                 </tr>
             </table>
 
+            <p>Tabela com duas colunas</p>
+            <table>
+                <tr>
+                    <th colspan="2">nome</th><th>idade</th>
+                </tr>
+                <tr>
+                    <td>maminhas</td><td>gugudelaxxx</td><td>19</td>
+                </tr> 
+                <tr>
+                    <td>wolf</td><td>solitary</td><td>20</td>
+                </tr>
+            </table>
 
+        </div>
+
+        <div>
+
+            <h1>Listas</h1>
+            <p>Lista com um ponto</p>
+            <ul>
+                <li>Café</li>
+                <li>Pão</li>
+                <li>Leite</li>
+                <li>Queijo</li>
+                <li>Batata</li>
+                <li>Cebola</li>
+            </ul>
+            <ul style="list-style-type: circle;">
+                <li>Café</li>
+                <li>Pão</li>
+                <li>Leite</li>
+                <li>Queijo</li>
+                <li>Batata</li>
+                <li>Cebola</li>
+            </ul>
+            <ul style="list-style-type: square;">
+                <li>Café</li>
+                <li>Pão</li>
+                <li>Leite</li>
+                <li>Queijo</li>
+                <li>Batata</li>
+                <li>Cebola</li>
+            </ul>
+
+            <p>Lista com números</p>
+            <ol>
+                <li>Café</li>
+                <li>Pão</li>
+                <li>Leite</li>
+                <li>Queijo</li>
+                <li>Batata</li>
+                <li>Cebola</li>
+            </ol>
+            <ol type="A">
+                <li>Café</li>
+                <li>Pão</li>
+                <li>Leite</li>
+                <li>Queijo</li>
+                <li>Batata</li>
+                <li>Cebola</li>
+            </ol>
+            <ol type="I">
+                <li>Café</li>
+                <li>Pão</li>
+                <li>Leite</li>
+                <li>Queijo</li>
+                <li>Batata</li>
+                <li>Cebola</li>
+            </ol>
+
+            <p>Lista com especifícações</p>
+            <dl>
+                <dt>café</dt>
+                <dd>- daquela marca lá</dd>
+                <dd>- que não seja tão caro</dd>
+                <dd>- não é o 3 corações</dd>
+                <dt>leite</dt>
+                <dd>- daquela marca lá</dd>
+                <dd>- o normal, não o desnatado</dd>
+                <dd>- o mais caro que tiver</dd>
+                <dt>pão</dt>
+                <dd>- frances</dd>
+                <dd>- que não esteja crocante e sim macío</dd>
+                <dt>cebola</dt>
+                <dd>- a roxa</dd>
+                <dd>- no mínimo 1kg</dd>
+                <dt>batata</dt>
+                <dd>- a doce</dd>
+                <dd>- no mínimo 2kg</dd>
+            </dl>
 
         </div>
 
